@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plots List</title>
+  <style>
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+    :root {
+      --principal-orange : #EA5C2B;
+      --secondary-orange : #FF7F3F;
+      --very-ligth-yellow : #F6D860;
+      --very-ligth-green: #95CD41;
+      --white: #FFF;
+      --black: #000;
+      --sm: 14px;
+      --md: 16px;
+      --lg: 18px;
+    }
+
+    .container {
+      padding: 16px;
+      text-align: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card-container {
+      display: grid;  
+      grid-template-columns: repeat(auto-fill, 380px);
+      gap: 10px;
+      place-content: center;
+    }
+
+    .product-card {
+      border: 1px solid #CCC;
+      border-radius: 8px;
+    }
+
+    .product-card-image {
+      height: 250px;
+    }
+
+    .product-card-image img {
+      width: 100%;
+      border-radius: 8px 8px 0 0;
+      object-fit: cover;
+      height: 100%;
+    }
+
+    .product-info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px;
+    }
+
+    .product-location{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .product-location > span:nth-child(1){
+      font-size: var(--md);
+      font-weight: 600;
+    }
+
+    .product-location span:nth-child(2), .product-location span:nth-child(3){
+      font-size: var(--sm);
+      font-weight: 300;
+      margin: 5px 0;
+    }
+
+    .product-rating {
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .btn {
+      border-radius: 8px;
+      width:320px;
+      cursor: pointer;
+      font-size: var(--md);
+      font-weight: bold;
+      height: 50px;
+      color: var(--white);
+      border: none;
+      margin: 10px 0;
+    } 
+    
+    .btn-primary {
+      background: var(--very-ligth-green);
+    }
+
+    .btn-outline-primary {
+      background-color: var(--white);
+      color: var(--very-ligth-green);
+    }
+
+    .btn-outline-primary:focus {
+      color: var(--white);
+      background-color: var(--very-ligth-green);
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h3> Escoge tu huerta? 🍀</h3>
+    <div class="card-container">
+      <div class="product-card">
+        <div class="product-card-image">
+          <img src="https://images.unsplash.com/photo-1642704578943-a3aac11885a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=874&q=80" alt="huerta">
+        </div>
+        <div class="product-info">
+          <div class="product-location">
+            <span>La Floresta</span>
+            <span>Ciudad: Manizales</span>
+          </div>
+          <span>Extensión: 20 M2</span>
+        </div>
+        
+      </div>
+      <div class="product-card">
+        <div class="product-card-image">
+          <img src="https://images.unsplash.com/photo-1598902108854-10e335adac99?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="huerta">
+        </div>
+         <div class="product-info">
+          <div class="product-location">
+            <span>La Cornelia</span>
+            <span>Ciudad: Pereira</span>
+          </div>
+          <span>Extensión: 20 M2</span>
+        </div>
+        
+      </div>
+      <div class="product-card">
+        <div class="product-card-image">
+          <img src="https://images.unsplash.com/photo-1598902468171-0f50e32a7bf2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="huerta">
+        </div>
+         <div class="product-info">
+          <div class="product-location">
+            <span>La Pesebrera</span>
+            <span>Ciudad: Neiva</span>
+          </div>
+          <span>Extensión: 20 M2</span>
+        </div>
+        
+      </div>
+      <div class="product-card">
+        <div class="product-card-image">
+          <img src="https://images.unsplash.com/photo-1486328228599-85db4443971f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="huerta">
+        </div>
+         <div class="product-info">
+          <div class="product-location">
+            <span>Camunos Nuevos</span>
+            <span>Ciudad: Bogotá</span>
+          </div>
+          <span>Extensión: 20 M2</span>
+        </div>
+        
+      </div>
+      <div class="product-card">
+        <div class="product-card-image">
+          <img src="https://images.unsplash.com/photo-1536236010565-78fbb2fb25d5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="huerta">
+        </div>
+         <div class="product-info">
+          <div class="product-location">
+            <span>La Primavera</span>
+            <span>Ciudad: Armenia</span>
+          </div>
+          <span>Extensión: 20 M2</span>
+        </div>
+        
+      </div>
+      <div class="product-card">
+        <div class="product-card-image">
+          <img src="https://images.unsplash.com/photo-1590531711560-43d7a9bc4e6c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="huerta">
+        </div>
+         <div class="product-info">
+          <div class="product-location">
+            <span>Enredaderas</span>
+            <span>Ciudad: Montería</span>
+          </div>
+          <span>Extensión: 20 M2</span>
+        </div>
+        
+      </div>
+      <div class="product-card">
+        <div class="product-card-image">
+          <img src="https://images.unsplash.com/photo-1508857650881-64475119d798?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="huerta">
+        </div>
+         <div class="product-info">
+          <div class="product-location">
+            <span>El horizonte</span>
+            <span>Ciudad: Bucaramanga</span>
+          </div>
+          <span>Extensión: 20 M2</span>
+        </div>
+        
+      </div>
+
+    </div>
+    <button class="btn btn-primary">Siguiente</button>
+
+  </div>
+</body>
+</html>

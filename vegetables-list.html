@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="./assets/css/normalize.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <title>Lista de vegetables</title>
+  <style>
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+    :root {
+      --principal-orange : #EA5C2B;
+      --secondary-orange : #FF7F3F;
+      --very-ligth-yellow : #F6D860;
+      --very-ligth-green: #95CD41;
+      --white: #FFF;
+      --black: #000;
+      --sm: 14px;
+      --md: 16px;
+      --lg: 18px;
+    }
+
+    .container {
+      padding: 16px;
+      text-align: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .search-container{
+      display: flex;
+      margin: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      height: 35px;
+      box-sizing: border-box;
+      padding-left: 4px;
+      max-width: 500px;
+    }
+
+    .search-container input {
+      border: none;
+      width: 100%;
+      border-radius: 0 8px 8px 0;
+      outline: none;
+    }
+    .card-container {
+      display: grid;  
+      grid-template-columns: repeat(auto-fill, 160px);
+      gap: 10px;
+      place-content: center;
+    }
+
+    .product-card {
+      padding: 8px;
+      border: 1px solid #CCC;
+      border-radius: 8px;
+    }
+
+    .product-card img {
+      width: 100%;
+    }
+
+    .product-info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .product-info p {
+      font-size: var(--sm);
+      font-weight: 500;
+    }
+
+    .product-info input {
+      width: 20px;
+      height: 20px;
+    }
+
+    .btn {
+      border-radius: 8px;
+      width:320px;
+      cursor: pointer;
+      font-size: var(--md);
+      font-weight: bold;
+      height: 50px;
+      color: var(--white);
+      border: none;
+      margin: 10px 0;
+    } 
+    
+    .btn-primary {
+      background: var(--very-ligth-green);
+    }
+
+    @media (min-width:640px) {
+      
+      .search-container {
+        margin: 10px auto;
+      }
+      .card-container {
+        grid-template-columns: repeat(auto-fill, 273px);
+      }
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h3> Qué quieres cultivar? 🥦</h3>
+    <div class="search-container">
+      <img width="24" src="./assets/icons/search-icon.svg" alt="icono-buscar">
+      <input type="text" name="" id="">
+    </div>
+    <div class="card-container">
+      <div class="product-card">
+        <img src="./assets/images/tomates.webp" alt="tomates">
+        <div class="product-info">
+          <p>Tomates</p>
+          <input type="checkbox" name="" id="">
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="./assets/images/zanahoria.jfif" alt="zanahoria">
+        <div class="product-info">
+          <p>Zanahoria</p>
+          <input type="checkbox" name="" id="">
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="./assets/images/cebolla.webp" alt="cebolla">
+        <div class="product-info">
+          <p>Cebolla</p>
+          <input type="checkbox" name="" id="">
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="./assets/images/pimenton.webp" alt="pimenton">
+        <div class="product-info">
+          <p>Pimentón</p>
+          <input type="checkbox" name="" id="">
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="./assets/images/lechuga.webp" alt="lechuga">
+        <div class="product-info">
+          <p>Lechuga</p>
+          <input type="checkbox" name="" id="">
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="./assets/images/avihuelas.webp" alt="avihuelas">
+        <div class="product-info">
+          <p>Lechuga</p>
+          <input type="checkbox" name="" id="">
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="./assets/images/cilantro.webp" alt="cilantro">
+        <div class="product-info">
+          <p>Cilantro</p>
+          <input type="checkbox" name="" id="">
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="./assets/images/cilantro.webp" alt="cilantro">
+        <div class="product-info">
+          <p>Cilantro</p>
+          <input type="checkbox" name="" id="">
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="./assets/images/cilantro.webp" alt="cilantro">
+        <div class="product-info">
+          <p>Cilantro</p>
+          <input type="checkbox" name="" id="">
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-primary">Siguiente</button>
+  </div>
+</body>
+</html>
